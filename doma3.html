@@ -9,14 +9,77 @@
       name="descriptions"
       content="Ovdje učimo programirati frontend za web"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
     <title>Moj Treći Domaći Rad</title>
   </head>
-  <body>
+  <body style="font-family: 'Special Elite', cursive; background-color: beige">
     <a href="./index.html">Vrati se na početnu stranicu</a>
     <br /><br />
 
     <!--Tema-->
     <h1>Forma sa 20 različitih elemenata</h1>
-    <br /><br />
+    <h2>HTML Forms</h2>
+    <br />
+
+    <!--Forme-->
+
+    <h3>1.) Submit Form</h3>
+    <form action="#" method="get" enctype="text/plain" autocomplete="on">
+      <label for="ime">Ime</label><br />
+      <input type="text" id="ime" name="ime" /><br />
+      <label for="prezime">Prezime</label><br />
+      <input type="text" id="prezime" name="prezime" /><br /><br />
+      <input type="Submit" value="Submit" /><br /><br />
+      <br />
+
+      <h3>2.) Radio Buttons</h3>
+      <p>Odaberite koje Antunovo predavanje Vam je bilo draže:</p>
+      <input
+        type="radio"
+        name="predavanje"
+        id="predavanje1"
+        value="Predavanje 1"
+      />
+      <label for="predavanje1">Predavanje 1</label><br />
+      <input
+        type="radio"
+        name="predavanje"
+        id="predavanje2"
+        value="Predavanje 2"
+      />
+      <label for="predavanje2">Predavanje 1</label><br />
+      <input
+        type="radio"
+        name="predavanje"
+        id="predavanje2"
+        value="Predavanje 3"
+      />
+      <label for="predavanje3">Predavanje 3</label> <br /><br />
+      <br />
+
+      <h3>3.) Checkbox Form</h3>
+      <p>Odaberite boju:</p>
+      <br />
+      <input type="checkbox" id="boje" name="boje" value="boje" />
+      <label for="Bijela">Bijela</label><br />
+      <input type="checkbox" id="boje" name="boje" value="boje" />
+      <label for="Plava">Plava</label><br />
+      <input type="checkbox" id="boje" name="boje" />
+      <label for="Crvena">Crvena</label><br /><br />
+      <br />
+
+      <h3>4.) Button Form</h3>
+      <input
+        type="button"
+        onclick="alert('Antune ostani s nama do kraja!!!')"
+        value="Upri ovdje..."
+      /><br /><br />
+      <br />
+    </form>
   </body>
 </html>
