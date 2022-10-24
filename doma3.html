@@ -63,14 +63,14 @@
       <br />
 
       <h3>3.) Checkbox Form</h3>
-      <p>Odaberite boju:</p>
+      <p>Odaberite koje ime ti je draže:</p>
       <br />
-      <input type="checkbox" id="boje" name="boje" value="boje" />
-      <label for="Bijela">Bijela</label><br />
-      <input type="checkbox" id="boje" name="boje" value="boje" />
-      <label for="Plava">Plava</label><br />
-      <input type="checkbox" id="boje" name="boje" />
-      <label for="Crvena">Crvena</label><br /><br />
+      <input type="checkbox" id="imena" name="imena" value="imena" />
+      <label for="Mate">Mate</label><br />
+      <input type="checkbox" id="imena" name="imena" value="imena" />
+      <label for="Jure">Jure</label><br />
+      <input type="checkbox" id="imena" name="imena" />
+      <label for="Ante">Ante</label><br /><br />
       <br />
 
       <h3>4.) Button Form</h3>
@@ -80,6 +80,127 @@
         value="Upri ovdje..."
       /><br /><br />
       <br />
+
+      <h3>5.) Color Form</h3>
+      <label for="najboja">Odaberite njdražu boju:</label>
+      <input
+        type="color"
+        id="najboja"
+        name="najboja"
+        value="#ff0000"
+      /><br /><br />
+      <input type="submit" /><br /><br />
+      <br />
+
+      <h3>6.) Date Form</h3>
+      <label for="rodendan">Rođendan:</label><br />
+      <input type="date" id="rodendan" name="rodendan" />
+      <input type="submit" /> <br /><br />
+      <br />
+
+      <h3>7.) Datetime-local Form</h3>
+      <label for="datumivrijeme">Unesi datum i vrijeme:</label><br />
+      <input type="datetime-local" id="datumivrijeme" name="datumivrijeme" />
+      <input type="submit" /><br /><br />
+      <br />
+
+      <h3>8.) email Form</h3>
+      <label for="email">Unesite svoj email:</label><br />
+      <input type="email" id="email" name="email" />
+      <input type="submit" /><br /><br />
+      <br />
+
+      <h3>9.) Month form</h3>
+      <label for="rođendan">Unesi svoj datum rođenja:</label><br />
+      <input type="month" id="rodendan" name="rodendan" />
+      <input type="submit" /><br /><br />
+      <br />
+
+      <h3>10.) Number Form</h3>
+      <p>Odaberite jedan broj između 1 i 99</p>
+      <label for="broj">Unesi broj:</label><br />
+      <input
+        type="number"
+        id="quantity"
+        name="quantity"
+        min="1"
+        max="99"
+      /><br /><br />
+      <br />
+
+      <h3>11.) Password Forma</h3>
+      <label for="password"><b>Password</b></label
+      ><br />
+      <input
+        type="password"
+        placeholder="Enter Password"
+        name="password"
+        required
+      />
+      <br />
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember" /> Remember me
+      </label>
+      <br /><br />
+      <br />
+
+      <h3>12.) Range Form</h3>
+      <label for="jacina">Jačina (0 and 50):</label><br />
+      <input type="range" id="jacina" name="jacina" min="0" max="50" />
+      <input type="submit" /><br /><br />
+      <br />
+
+      <h3>13.) Reset Form</h3>
+
+      <label for="email">Unesi svoj email:</label>
+      <input type="email" id="email" name="email" /><br /><br />
+
+      <label for="pin">Unesi svoj PIN:</label>
+      <input type="text" id="pin" name="pin" maxlength="4" /><br /><br />
+
+      <input type="reset" value="Reset" />
+      <input type="submit" value="Submit" /> <br /><br />
+      <br />
+
+      <h3>14.)Tel Form</h3>
+
+      <label for="phone">Unesi svoj broj mobitela:</label><br /><br />
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="+385 099 1234 123"
+        pattern="+385 [0-9]{3}-[0-9]{4}-[0-9]{3}"
+        required
+      /><br /><br />
+      <small>Format: +385 099 1234 123</small><br /><br />
+      <input type="submit" /> <br /><br />
+      <br />
+
+      <h3>15.) URL Form</h3>
+      <label for="homepage">Unesi svoju početnu stranicu:</label><br />
+      <input type="url" id="homepage" name="homepage" /><br /><br />
+      <input type="submit" /> <br /><br />
+      <br />
+
+      <h3>16.) Week Form</h3>
+
+      <label for="tjedan">Odaberi tjedan:</label><br />
+      <input type="week" id="tjedan" name="tjedan" />
+      <input type="submit" /> <br /><br />
+      <br />
+
+      <h3>17.) Image Form</h3>
+
+      <label for="ime">Ime: </label>
+      <input type="text" id="ime" name="ime" /><br /><br />
+      <label for="prezime">Prezime: </label>
+      <input type="text" id="prezime" name="prezime" /><br /><br />
+      <input type="image" alt="Submit" width="48" height="48" /><br /><br />
+      <br />
+
+      <h3>18.)</h3>
     </form>
   </body>
 </html>
