@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SVG, Canvas, Video, Audio</title>
+  </head>
+  <body>
+    <a href="./index.html">Vrati se na početnu stranicu</a> <br /><br />
+
+    <!-- SVG Primjer -->
+
+    <h3>SVG Primjer</h3>
+
+    <svg width="100" height="100">
+      <circle
+        cx="50"
+        cy="50"
+        r="40"
+        stroke="green"
+        stroke-width="4"
+        fill="yellow"
+      />
+      Sorry, your browser does not support inline SVG.
+    </svg>
+    <br /><br />
+    <br />
+
+    <!-- Canvas Vježba -->
+
+    <h3>Canvas Primjer</h3>
+
+    <canvas
+      id="myCanvas"
+      width="200"
+      height="100"
+      style="border: 1px solid #d3d3d3"
+    >
+      Your browser does not support the HTML canvas tag.</canvas
+    >
+
+    <script>
+      var c = document.getElementById("myCanvas");
+      var ctx = c.getContext("2d");
+      ctx.moveTo(0, 0);
+      ctx.lineTo(200, 100);
+      ctx.moveTo(200, 0);
+      ctx.lineTo(0, 100);
+      ctx.stroke();
+    </script>
+    <br /><br />
+    <br />
+
+    <canvas
+      id="myCanvas1"
+      width="300"
+      height="150"
+      style="border: 1px solid #d3d3d3"
+    >
+      Your browser does not support the HTML canvas tag.</canvas
+    >
+
+    <script>
+      var c1 = document.getElementById("myCanvas1");
+      var ctx1 = c1.getContext("2d");
+      ctx1.beginPath();
+      ctx1.arc(60, 70, 50, Math.PI, 2 * Math.PI);
+      ctx1.stroke();
+      ctx1.beginPath();
+      ctx1.arc(160, 70, 50, 0, Math.PI);
+      ctx1.stroke();
+    </script>
+    <br /><br />
+    <br />
+
+    <script>
+      var c2 = document.getElementById("myCanvas2");
+      var ctx2 = c2.getContext("2d");
+      ctx2.beginPath();
+      ctx2.moveTo(0, 50);
+      ctx2.lineTo(200, 50);
+      ctx2.stroke();
+      ctx2.arc(50, 50, 50, 0, Math.PI);
+      ctx2.arc(150, 50, 50, Math.PI, 2 * Math.PI);
+      ctx2.stroke();
+    </script>
+    <br /><br />
+    <br />
+
+    <!-- Audio -->
+
+    <h3>Audio File</h3>
+
+    <audio controls muted preload="metadata">
+      <source
+        src="./Multimedija/Machine Gun Kelly - I Think I'm OKAY [Official Music Video].mp3"
+      />
+      <source
+        src="./Multimedija/[YT2mp3.info] - Machine Gun Kelly - I Think I_'m OKAY [Official Music Video] (256kbps).mp3"
+        type="audio/mpeg"
+      /></audio
+    ><br />
+    <br />
+    <br />
+
+    <!-- Video -->
+  </body>
+</html>
