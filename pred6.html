@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      #kratica1 {
+        position: relative;
+      }
+    </style>
+    <script>
+      var stvoren = false;
+      var prikazan = false;
+      function toggle(event) {
+        if (prikazan && event) {
+          var tag = document.createElement("span");
+          tag.innerHTML = "Svjetska Zdravstvena Organizacija";
+          tag.setAttribute("id", "objasnjenje");
+          tag.style.position = "absolute";
+          tag.style.minWidth = "max-content";
+          tag, (style.backgroundColor = "teal");
+          tag.style.top = "-20px";
+          tag.style.left = "40px";
+          event.target.appendChild(tag);
+          stvoren = true;
+          prikazan = true;
+        } else if (!prikazan) {
+          document.getElementById("objasnjene").style.display = "block";
+          prikazan = true;
+        }
+      }
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=img
+    , initial-scale=1.0"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="./index.html">Vrati se na početnu stranicu</a> <br /><br />
+    <p>
+      Marking up Abbreviations can give useful information to browsers,
+      translation systems and search-engines.
+      <span
+        onmouseleave="toggle(event)"
+        onmouseenter="toggle(event)"
+        id="kratica1"
+        >WHO</span
+      >
+    </p>
+    <p>
+      The <span onmouseover="prikazi()" id="kratica1">WHO</span> was founded in
+      1948.
+    </p>
+
+    <p>
+      Marking up Abbreviations can give useful information to browsers,
+      translation systems and search-engines.
+    </p>
+  </body>
+</html>
