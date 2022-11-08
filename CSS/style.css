@@ -1,0 +1,51 @@
+h1 {
+    color:rgb(0, 128, 51)
+  }
+  ul {
+    color:red
+  }
+  .drugi-h1 {
+    color: rgb(123, 0, 255);
+  }
+  .zeleni-tekst {
+    color: aqua;
+  }
+  #plavi-tekst {
+    color: blue;
+  }
+  #plavi-tekst2 {
+    color: blue;
+  }
+  [:target~=_blank] {
+    color: aquamarine;
+  }
+
+  h2:hover {
+    font-size: 90px;
+  }
+
+  li:hover {
+    color: yellowgreen;
+  }
+
+  a:visited {
+    background-color: maroon;
+  }
+
+  p:first-child {
+    color: darkgoldenrod;
+  }
+  p:last-child {
+    color: chocolate;
+  }
+  p:nth-child(odd) {
+    color: darkorchid;
+  }
+
+  p:first-of-type {
+    color: green;
+  }
+
+  div p{
+    background-color: blueviolet;
+  }
