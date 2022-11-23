@@ -1,0 +1,35 @@
+.green {
+    border: 100px solid green;
+    display: inline-block;
+}
+
+.blue {
+    border: 200px solid blue;
+    display: inline-block;
+    position: absolute;
+    left: 550px;
+    top: 520px;
+    width: 300px;
+}
+
+.red {
+    border: 100px solid red;
+    display: inline-block;
+    position: absolute;
+    left: 550px;
+    top: 550px;
+}
+
+.red1 {
+    border: 100px solid red;
+    display: inline-block;
+    border-radius: 50%;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+p {
+    border: 2px solid black;
+}
